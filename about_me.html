@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hey, Jade</title>
+        <link href="./practice.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body class="gra">
+
+        <nav>
+            <br>
+            <a href="./index.html">메인</a>
+            <a href="./blog_list.html">일기장</a>
+            <a href="./about_me.html">본인 소개</a>
+            <br>
+        </nav>
+
+        <h2>본인 소개</h2> 
+        <img src="./dataset/jade.png" width="300px"><br>
+        <h3>ENTP라는데 왜 E인지 모르겠어요</h3>
+        <p>노래 좋아하고 게임 좋아하고<br>
+        영화 좋아하고 잔재주 많아요<br>
+        잘하진 않아도 두루두루 합니다</p>
+
+        <img src="./dataset/뿌잉.PNG" width="300px"><br>
+        저희 집 고양이 또 보고 가세요<br>
+        올해 3살이구요<br>
+        취미는 집사 물어뜯기입니다<br>
+        귀여운 마음을 마음껏 표현하실 수 있게<br>
+        버튼을 붙여 드릴게용<br>
+        <button id = "cute">너무 귀여워!</button>
+        <span>이쁨 받은 횟수: 0</span>
+
+    </body>
+    <script>
+        let count = 0;
+        const button = document.getElementById("cute");
+        const span = document.querySelector("span");
+        function clickCounter(){
+            count+=1;
+            span.innerText = `이쁨 받은 횟수: ${count}`;
+            console.log(count);
+        }
+        button.addEventListener("click",  clickCounter);
+    </script>
+</html>
