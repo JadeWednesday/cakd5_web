@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hey, Jade</title>
+    </head>
+    <body>
+
+        <h2 id="one">The Jadey Parable</h2>
+
+        <p>제이드가 사는 이야기,<br>
+        그것은 마치 하나의 우화와도 같다.</p>
+        <button id="two" onclick="f()">Click Me</button>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+        <script>
+            /*function f(){
+                document.getElementById('one').innerHTML = "I've put a spell on you to be happy!";
+                document.getElementById('one').style.color='lightcoral';
+            }*/
+            //function f(){
+                //$('#one').html('하이하이 방가방가')
+                //document.getElementById('one').style.color='lightcoral';
+            $('#two').click({
+                function f(){
+                    $('p').html('제이쿼리 쉽다고 했잖아!!!!! 쉽다고 했잖아!!!!')
+                }
+            })
+
+        </script>
+
+        <!--
+            JQuery는 자바스크립트의 라이브러리 중 하나로서
+            1. 엘리먼트를 선택할 수 있는 강력한 방법
+            2. 선택된 엘리먼트를 효과적으로 제어할 수 있다
+        -->
+    </body>
+</html>
